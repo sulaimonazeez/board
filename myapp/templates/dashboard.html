@@ -1,0 +1,109 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <title>Home Dashboard</title>
+    <link rel="stylesheet" href="{% static 'App.css' %}" />
+        <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width,initial-scale=1.0"/>
+     <link rel="icon" href={% static "IMG-20231030-WA0039.jpg" %}/>
+    <link rel="stylesheet" href="{% static 'App.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="left-bar col-12 col-sm-3 col-xs-12 col-md-3 col-lg-3 col-xlg-3">
+        <div class="container-fluid d-flex">
+          <img class="dashboard-logo" src="{% static 'Olamide-Gaza-artwork.jpeg' %}" alt="admin logo" />
+          <h6 class="demo">Demo Admin</h6>
+          <i class="demo fa fa-windows" aria-hidden="true"></i>
+        </div>
+        <div style="width: 105%; background-color: black" class="mt-5 container-fluid ">
+          <h3 class="text-secondary"> Management</h3>
+        </div>
+        <ul>
+          <li><i class="fa fa-dashboard"></i><a href="/"> Dashboard</a></li>
+           <li><i class="fa fa-users"></i> <a href="/"> Admission Manag...</a></li>
+           <li><i class="fa fa-users"></i> <a href="/"> Student Manag...</a></li>
+           <li><i class="fa fa-user"></i><a href="/"> Parent Account</a></li>
+           <li><i class="fa fa-users"></i><a href="/"> Staff Manag...</a></li>
+           <li><i class="fa fa-address-card"></i> <a href="/"> ID Card Print...</a></li>
+           <li><i class="fa fa-user"></i><a href="/"> Accountants</a></li>
+           <li><i class="fa fa-inbox"></i><a href="/"> Messages</a></li>
+           <li><i class="fa fa-bank"></i> <a href="/">Classes</a></li>
+           <li><i class="fa fa-bank"></i><a href="/"> Subjects</a></li>
+           <li><i class="fa fa-signal"></i> <a href="/"> Manage Attend.. </a></li>
+           <li><i class="fa fa-desktop"></i> Online Classes</a><a href="/"></li>
+           <li><i class="fa fa-calendar"></i><a href="/"> Time Table Manag...</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-9 col-lg-9 col-md-9 col-xlg-9">
+          <div class="mt-4 d-flex upper-nav justify-content-center container-fluid">
+            <i class="bg-success fa fa-plus"></i>
+            <i class="bg-danger 	fa fa-child"></i>
+            <i class="bg-primary fa fa-check"></i>
+            <i class="bg-warning fa fa-users"></i>
+            <i class="bg-secondary fa fa-money"></i>
+            <i class="bg-success fa fa-dollar"></i>
+            <i class="bg-danger fa fa-thumbs-up"></i>
+            <i class="bg-primary fa fa-calendar"></i>
+            <i class="bg-warning fa fa-user"></i>
+             <i class="bg-success fa fa-file"></i>
+            <i class="bg-danger fa fa-bell"></i>
+            <i class="bg-primary fa fa-comment"></i>
+            <i class="bg-warning fa fa-comments"></i>
+          </div>
+          <div  class="mt-3 container-fluid d-flex justify-content-between">
+            <h4>Admin Dashboard</h4>
+            <h5>Show/Hide Detail</h5>
+          </div>
+          <div class="mt-1 text-light container-fluid mt-3 anat row">
+            <div class="mb-3 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 bg-danger">
+              <h1>27</h1>
+              <p>Due - Amount:64750</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+            <div class="mb-3 d1 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 bg-primary">
+              <h1>5000</h1>
+              <p>Total Income this Year</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+            <div class="mb-3 d2 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 bg-success">
+              <h1>5000</h1>
+              <p>Income this month</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+            <div class="mb-3 d3 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 deep">
+              <h1>0</h1>
+              <p>Income Today</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+             <div class="d4 mb-3 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 bg-danger">
+              <h1>5000</h1>
+              <p>Profit this Month</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+            <div class="mb-3 d5 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 bg-primary">
+              <h1>0</h1>
+              <p>Total Expensive Year</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+            <div class="mb-3 d6 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 bg-success">
+              <h1>0</h1>
+              <p>Expensive this Month</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+            <div class="mb-3 d7 col-6 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 deep">
+              <h1>0</h1>
+              <p>Expensive Today</p>
+              <p class="text-center">show more info <i style='font-size: 10px' class="bg-light fa text-dark fa-arrow-right arrow p-1"></i></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
